@@ -1,0 +1,16 @@
+permuted = []
+i = 1
+def digit_same(i):
+    d = [int(j) for j in str(i)]
+    d.sort() 
+    if d == 2*d == 3*d == 4*d == 5*d == 6*d:
+        return True
+    else:
+        return False
+while len(permuted) == 0:
+    i += 1
+    if digit_same(i) == True:
+        permuted.append(i)
+        break   
+print permuted
+

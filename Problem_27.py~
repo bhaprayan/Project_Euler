@@ -1,0 +1,5 @@
+for i in xrange(1000):
+    for j in xrange(1000):
+        for n in range(1000):
+            formula = n**2 + i*n + j
+ 
